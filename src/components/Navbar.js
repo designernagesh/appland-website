@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import logo from '../images/logo.png';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [ showNav, setShowNav ] = useState(false);
@@ -26,19 +27,16 @@ const Navbar = () => {
 
       <ul className="menu">
         <li>
-          <a href="#" className='active'>Home</a>
+          <Link to="intro">Home</Link>
         </li>
         <li>
-          <a href="#">Features</a>
+          <Link to="features">Features</Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link to="about">About</Link>
         </li>
         <li>
-          <a href="#">UI SS</a>
-        </li>
-        <li>
-          <a href="#">Download</a>
+          <Link to="presentation">Presentation</Link>
         </li>
       </ul>
     </nav>
